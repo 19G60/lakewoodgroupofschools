@@ -11,10 +11,11 @@
 /* Button styling */
 .btn {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
+    padding: 20px 0;
 }
 
 .btn a {
@@ -24,6 +25,8 @@
     font-weight: 600;
     border-radius: 5px;
     transition: 0.3s ease;
+    min-width: 150px; /* Added minimum width */
+    text-align: center;
 }
 
 /* Blue button variant */
@@ -52,19 +55,22 @@
 @media (max-width: 769px) {
     .btn {
         flex-direction: row;
-        gap: 0.8rem;
+        gap: 1rem;
+        padding: 15px 0;
     }
     
     .btn a {
         padding: 12px 25px;
         font-size: 0.8rem;
+        min-width: 130px;
     }
 }
 
 @media (max-width: 475px) {
     .btn {
         flex-direction: column;
-        gap: 0.6rem;
+        gap: 1rem;
+        padding: 10px;
     }
     
     .btn a {
@@ -167,6 +173,7 @@ nav .navigation ul li a:hover{
 
 
 /*Home*/
+
 
 #home{
     background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/hero\ img.jpg);
@@ -673,16 +680,510 @@ footer .copyright p{
 /*above Checked Up---- */
 
 #blog-container .blog .blogpost{
-            width: 100%;
-            margin-top: 30px;
+            width: 60%;
+            margin: 0 auto;
 
 
+}
+
+/*REFERENCE*/
+
+/* Blog styles */
+#blog-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+    gap: 30px;
+}
+
+#blog-container .blogs {
+    flex: 2;
+}
+
+#blog-container .blogs img {
+    width: 100%;
+    border-radius: 19px;
+    margin-bottom: 20px;
+}
+
+#blog-container .blogs .post {
+    padding-bottom: 60px;
+}
+
+#blog-container .blogs .post h3 {
+    color: rgb(29, 29, 29);
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+#blog-container .blogs .post p {
+    color: rgb(70, 70, 70);
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+#blog-container .blogs .post a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background: rgb(21, 21, 100);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#blog-container .blogs .post a:hover {
+    background: #fdc93b;
+    color: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+/* Categories sidebar */
+#blog-container .cate {
+    flex: 1;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+#blog-container .cate h2 {
+    padding-bottom: 15px;
+    color: rgb(29, 29, 29);
+}
+
+#blog-container .cate a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+    display: block;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#blog-container .cate a:hover {
+    color: #fdc93b;
+}
+
+#blog-container .cate hr {
+    border: none;
+    height: 1px;
+    background: rgb(212, 212, 212);
+}
+
+
+
+/*POST PAGE-BLOG */
+/* Post page specific styles */
+#blog-container .blogs .post {
+    padding: 0 0 60px 0;
+    margin-bottom: 40px;
+}
+
+#blog-container .blogs .post img {
+    width: 50%;
+    max-height: 750px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#blog-container .blogs .post h3 {
+    color: rgb(29, 29, 29);
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+#blog-container .blogs .post p {
+    color: rgb(70, 70, 70);
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+
+#blog-container .blogs .post a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background: rgb(21, 21, 100);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#blog-container .blogs .post a:hover {
+    background: #fdc93b;
+    color: rgb(21, 21, 100);
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Campuses*/
+#home-campuses{
+         background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/vintage\ school\ entrance.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:40px ;
+}  
+
+
+
+#home-campuses h2{
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#home-campuses p{
+    width: 50%;
+    color: #ddd;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+
+
+#home-campuses .btn{
+    margin-top: 30px;
+}
+
+
+#home-campuses a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home-campuses a.blue{
+    color: rgb(0, 0, 0);
+    background: #fdc93b;
+    transition: 2s ease;
+}
+
+#home-campuses a.blue:hover{
+    background: rgb(21, 21, 100);
+    color: white;
+  
+}
+
+
+
+/*CAMPUSE  INNER */
+
+#campuse-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+
+}
+
+#campuse-inner h3{
+    padding 35px 0 25px;
+    color: #3d67ab;
+}
+
+#campuse-inner p{
+    color: #33425a;
+}
+
+#campuse-inner hr{
+    height: 5px;
+    background-color: #9e5dfa;
+    margin-top: 40px;
+}
+
+#campuse-inner .overview{
+    width: 70%;
+}
+
+
+#campuse-inner .overview .campuse-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#campuse-inner .overview .campuse-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#campuse-inner .overview .campuse-head .c-name{
+    width: 70%;
+}
+
+#campuse-inner .overview .campuse-head .c-name h2{
+    color: #569ae3;
+    margin: 6px 0;
+}
+
+#campuse-inner .overview .campuse-head .c-name p{
+    padding-top: 5px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#campuse-inner .overview .campuse-head .c-name ul{
+        justify-content: space-between;
+}
+
+#campuse-inner .overview .campuse-head .c-name li{
+        justify-content: space-between;
+        padding: 5px;
+}
+
+#campuse-inner .overview .campuse-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #000000;
+    box-shadow: 10px 5px 17px rgb(0, 0, 0);
+}
+
+#campuse-inner .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#campuse-inner .learn i{
+    color: #600dd4;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+#campuse-inner .tutor{
+    display: flex;
+}
+
+#campuse-inner .tutor-det{
+    padding-top: 140px;
+}
+
+#campuse-inner .tutor img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#campuse-inner .tutor h5{
+    font-size: 15px;
+}
+
+#campuse-inner .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 10px rgb(239, 224, 15);
+}
+
+#campuse-inner .enroll h3{
+    padding-bottom: 10px;
+}
+
+#campuse-inner .enroll p{
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+    margin: 15px 0;
+}
+
+#campuse-inner .enroll p i{
+    color: #600dd4;
+    font-weight: 500;
+    
+    text-align: center;
+}
+
+#campuse-inner .enroll-bt{
+    padding:25 0 20 0;
+    margin: auto;
+    text-align: center;
+}
+
+#campuse-inner .enroll-bt a{
+    text-decoration: none;
+    font-size: .8rem;
+    padding: 13px 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(21, 21, 100);
+}
+
+#theHub .learn-container{
+    display: flex;
+    align-items: flex-start;
+    gap:40px;
+    margin: 30px 0;
+    width: 100%;
+    height: 50%;
+    
+}
+
+
+#theHub .learn{
+    width: 60%;
+}
+
+#theHub .learn-container h5{
+text-align: center;
+ /* border: 1px solid blue;  For visualization */
+  padding: 10px;
+  font-size: 35px;
+
+}
+    
+
+#theHub .learn-container h6{
+    text-align: center;
+    font-size: 25px;
+    color: #569ae3;
+    font-weight: lighter;
+    padding-bottom: 10px;
+
+}
+
+#theHub .learn-container .learn hr{
+       border: none;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(15, 114, 181, 0), rgba(61, 7, 223, 0.75), rgba(149, 101, 252, 0));  
+}
+
+#theHub .learn-container .learn p{
+    padding: 40px 5px 5px 40px;
+    width: 70%;
+}
+
+#theHub .learn-container .learn-img{
+    width: 35%;
+}
+
+#theHub .learn-container .learn-img img{
+    width: 90%;
+    align-items: center;
+}
+
+
+
+/*IMPORTANT DOCUMENTS*/
+
+#documents .all-doc{
+    
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   justify-content: space-between;
+}
+
+#documents .all-doc .doc-text{
+    margin-bottom: 40px;
+}
+
+
+/* Button styling */
+.doc-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.doc-btns a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 56px;
+    transition: 0.3s ease;
+    min-width: 150px; /* Added minimum width */
+    text-align: center;
+}
+
+/* Blue button variant */
+.doc-btns a.feestr {
+    color: #fff;
+    background: rgb(21, 21, 100);
+}
+
+.doc-btns a.feestr:hover {
+    color: rgb(21, 21, 100);
+    background: #6fd1fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVENESSSSSSSSSSSSSSSSECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN*/
 
 /* Add responsive styling for different screen sizes */
 
@@ -840,6 +1341,21 @@ footer .copyright .pro-links{
         width: 100%;
         margin-bottom: 30px;
     }
+
+
+
+
+
+
+
+    /*campuse-inner*/
+  /*  #campuse-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8vw 4vw;
+    } */
 }
 
 
@@ -916,90 +1432,7 @@ footer .copyright .pro-links{
 
 
 
-/*REFERENCE*/
 
-/* Blog styles */
-#blog-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 8vw;
-    gap: 30px;
-}
-
-#blog-container .blogs {
-    flex: 2;
-}
-
-#blog-container .blogs img {
-    width: 100%;
-    border-radius: 19px;
-    margin-bottom: 20px;
-}
-
-#blog-container .blogs .post {
-    padding-bottom: 60px;
-}
-
-#blog-container .blogs .post h3 {
-    color: rgb(29, 29, 29);
-    padding: 15px 0;
-    font-size: 1.5rem;
-}
-
-#blog-container .blogs .post p {
-    color: rgb(70, 70, 70);
-    padding-bottom: 20px;
-    line-height: 24px;
-}
-
-#blog-container .blogs .post a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 13px 35px;
-    background: rgb(21, 21, 100);
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-#blog-container .blogs .post a:hover {
-    background: #fdc93b;
-    color: rgb(21, 21, 100);
-    transition: 0.3s ease;
-}
-
-/* Categories sidebar */
-#blog-container .cate {
-    flex: 1;
-    padding: 20px;
-    background: #f7f7f7;
-    border-radius: 10px;
-}
-
-#blog-container .cate h2 {
-    padding-bottom: 15px;
-    color: rgb(29, 29, 29);
-}
-
-#blog-container .cate a {
-    text-decoration: none;
-    color: rgb(70, 70, 70);
-    font-weight: 500;
-    display: block;
-    padding: 15px 0;
-    transition: 0.3s ease;
-}
-
-#blog-container .cate a:hover {
-    color: #fdc93b;
-}
-
-#blog-container .cate hr {
-    border: none;
-    height: 1px;
-    background: rgb(212, 212, 212);
-}
 
 /* Responsive design for blog */
 @media (max-width: 769px) {
@@ -1018,47 +1451,7 @@ footer .copyright .pro-links{
     }
 }
 
-/* Post page specific styles */
-#blog-container .blogs .post {
-    padding: 0 0 60px 0;
-    margin-bottom: 40px;
-}
 
-#blog-container .blogs .post img {
-    width: 50%;
-    max-height: 750px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-#blog-container .blogs .post h3 {
-    color: rgb(29, 29, 29);
-    padding: 15px 0;
-    font-size: 1.5rem;
-}
-
-#blog-container .blogs .post p {
-    color: rgb(70, 70, 70);
-    padding-bottom: 20px;
-    line-height: 1.7;
-}
-
-#blog-container .blogs .post a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 13px 35px;
-    background: rgb(21, 21, 100);
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-#blog-container .blogs .post a:hover {
-    background: #fdc93b;
-    color: rgb(21, 21, 100);
-}
 
 /* Responsive adjustments */
 @media (max-width: 769px) {
@@ -1068,5 +1461,613 @@ footer .copyright .pro-links{
     
     #blog-container .blogs .post p {
         padding: 0 10px;
+    }
+}
+
+
+/* Base responsive styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Container width control */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    p { font-size: 0.9rem; }
+}
+
+/* Navigation Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav .navigation ul {
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.95);
+        z-index: 1000;
+        transition: 0.3s ease;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu-close {
+        display: block;
+    }
+}
+
+/* Home Section Responsive */
+@media (max-width: 768px) {
+    #home {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px;
+    }
+
+    #home p {
+        width: 90%;
+    }
+
+    #home .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Features Section Responsive */
+@media (max-width: 968px) {
+    #features .fea-base {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #features .fea-base {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Course Section Responsive */
+@media (max-width: 968px) {
+    #course .course-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #course .course-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Registration Section Responsive */
+@media (max-width: 768px) {
+    #registration {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #registration .reminder,
+    #registration .form {
+        width: 100%;
+    }
+
+    #registration .reminder .time {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Blog Container Responsive */
+@media (max-width: 968px) {
+    #blog-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #blog-container .blogs,
+    #blog-container .cate {
+        width: 100%;
+    }
+
+    #blog-container .blogs img {
+        width: 100%;
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer .copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-container .about-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #registration .reminder .time .date {
+        margin: 5px;
+    }
+
+    .navigation ul li {
+        padding: 15px 0;
+    }
+}
+
+/* Tablet Screen Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    #home p {
+        width: 70%;
+    }
+
+    #features .fea-base,
+    #course .course-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Campuses Inner Responsive Styles */
+@media (max-width: 769px) {
+    #campuse-inner {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #campuse-inner .overview {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #campuse-inner .overview .campuse-img {
+        height: 40vh;
+    }
+
+    #campuse-inner .overview .campuse-head {
+        flex-direction: column;
+    }
+
+    #campuse-inner .overview .campuse-head .c-name {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #campuse-inner .tutor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #campuse-inner .tutor-det {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #campuse-inner .tutor img {
+        margin: 0 auto;
+    }
+
+    #campuse-inner .enroll {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    #campuse-inner .overview .campuse-img {
+        height: 30vh;
+    }
+
+    #campuse-inner .enroll-bt a {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+    }
+
+    #campuse-inner .tutor img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #campuse-inner .overview .campuse-head span {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Campus Inner Responsive Styles */
+@media (max-width: 769px) {
+    /* TheHub section responsive */
+    #theHub .learn-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #theHub .learn {
+        width: 100%;
+    }
+
+    #theHub .learn-container .learn p {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #theHub .learn-container .learn-img {
+        width: 100%;
+    }
+
+    #theHub .learn-container .learn-img img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #theHub .learn-container h5 {
+        font-size: 24px;
+    }
+
+    #theHub .learn-container h6 {
+        font-size: 20px;
+    }
+
+    /* Documents section responsive */
+    #documents .all-doc {
+        padding: 20px;
+    }
+
+    .doc-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .doc-btns a {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 475px) {
+    #theHub .learn-container h5 {
+        font-size: 20px;
+    }
+
+    #theHub .learn-container h6 {
+        font-size: 16px;
+    }
+
+    #theHub .learn-container .learn p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Adjust tutor section */
+    #campuse-inner .tutor {
+        padding: 20px;
+    }
+
+    #campuse-inner .tutor-det {
+        padding-top: 15px;
+    }
+
+    #campuse-inner .enroll {
+        box-shadow: 0px 10px 5px rgb(239, 224, 15);
+    }
+
+    /* Document buttons */
+    .doc-btns a {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 770px) and (max-width: 1024px) {
+    #theHub .learn-container {
+        padding: 30px;
+    }
+
+    #theHub .learn {
+        width: 55%;
+    }
+
+    #theHub .learn-container .learn-img {
+        width: 45%;
+    }
+
+    #campuse-inner .overview .campuse-head {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
